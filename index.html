@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Generación Inversora</title>
+
+    <style>
+       .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: aparecer 1s ease;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+
+        button {
+            background-color: #38bdf8;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0ea5e9;
+        }
+      
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            flex: 1;              
+            max-width: 33.33%; 
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 25px;
+            background-color: #020617;
+            font-size: 14px;
+            color: #94a3b8;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ✅ TEXTO CORREGIDO (ANTES ESTABA MAL EN EL HEAD) -->
+<p class="titulo">TRANSFORMAMOS IDEAS EN PÁGINAS WEB 🚀</p>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#equipo">Equipo</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<header style="
+    background-image: url('códigos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+">
+    <h1>Level Up Sites</h1>
+    <p style="font-weight:700; font-size:20px; letter-spacing:1px;">
+        Creando el futuro digital con una generación inversora
+    </p>
+</header>
+
+<section id="inicio" class="container">
+  <h1>Inicio</h1>
+ <div class="card">
+    <h2>Creamos y crecemos contigo</h2>
+    <p>
+        Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel.
+Creamos páginas web pensadas para atraer clientes, generar confianza
+y convertir visitas en ventas reales.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="equipo" class="container">
+  <h1>Equipo</h1>
+
+  <div class="card">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+        Somos un grupo de 5 jóvenes apasionados por la tecnología,
+        la programación y la creación de páginas web.
+    </p>
+  </div>
+</section>
+<section id="servicios" class="container">
+  <h1>Servicios</h1>
+
+  <div class="card">
+    <h2>¿Qué ofrecemos?</h2>
+    <p>Ofrecemos creación de páginas web personalizadas para emprendedores.</p>
+    <ul>
+        <li>Páginas web para negocios</li>
+        <li>Diseño moderno y atractivo</li>
+        <li>Adaptación a dispositivos móviles</li>
+        <li>Soluciones digitales accesibles</li>
+    </ul>
+  </div>
+
+  <div class="galeria">
+    <img src="trabajo.jpg">
+    <img src="link.jpg">
+    <img src="trabajo2.jpg">
+  </div>
+</section>
+
+<section id="contacto" class="container">
+  <h1>Contacto</h1>
+
+  <div class="card">
+    <h2>¿Quieres trabajar con nosotros?</h2>
+    <p>Contáctanos</p>
+    <input type="text" placeholder="Tu nombre"><br><br>
+    <input type="email" placeholder="Tu correo"><br><br>
+    <button onclick="alert('Pronto estaremos disponibles 🚀')">Enviar</button>
+  </div>
+</section>
+
+<footer>
+    <p>© Level Up Sites | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
